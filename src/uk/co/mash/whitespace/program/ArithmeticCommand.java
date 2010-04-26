@@ -29,7 +29,7 @@ public class ArithmeticCommand extends Command {
     }
     
     @Override
-    public boolean process() {
+    public void process() {
         Stack<Long> stack = getFlatPackStack();
         if (!stack.isEmpty()) {
             Long item1 = stack.pop();
@@ -57,7 +57,7 @@ public class ArithmeticCommand extends Command {
                 break;
             }
         }
-        return super.process();
+        super.process();
     }
 
 }

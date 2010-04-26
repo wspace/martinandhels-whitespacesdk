@@ -24,7 +24,7 @@ public class DumpCommand extends Command {
     }
 
     @Override
-    public boolean process() {
+    public void process() {
         Stack<Long> stack = getFlatPackStack();
         Map<Long,Long> dump = takeDump();
         if (!stack.isEmpty()) {
@@ -45,6 +45,6 @@ public class DumpCommand extends Command {
                 break;
             }
         }
-        return super.process();
+        super.process();
     }
 }

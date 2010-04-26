@@ -42,10 +42,9 @@ public abstract class Command {
     /**
      * The point of a command object is to run! The process method is how it works. 
      * N.B. all calls to process() are recursive.
-     * @return TODO
      */
-    public boolean process() {
-        return getNextCommand().process();
+    public void process() {
+        getNextCommand().process();
     }
     /**
      * Getter for label. 

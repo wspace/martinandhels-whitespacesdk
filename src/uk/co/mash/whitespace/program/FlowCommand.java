@@ -30,7 +30,7 @@ public class FlowCommand extends Command {
     }
 
     @Override
-    public boolean process() {
+    public void process() {
         boolean keepGoing = true;
         // we jump around. This is the only command that uses the overridden process(int) method. 
         int currentCommand = getCurrentCommand();
@@ -78,6 +78,6 @@ public class FlowCommand extends Command {
                     "***  Program End  ***");
             keepGoing = false;
         }
-        return keepGoing? getNextCommand(nextCommand).process():false;
+        getNextCommand(nextCommand).process();
     }
 }

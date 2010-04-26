@@ -32,7 +32,7 @@ public class StackCommand extends Command {
     }
 
     @Override
-    public boolean process() {
+    public void process() {
         Stack<Long> stack = getFlatPackStack();
         Long number = getNumber();
         switch (fullCommandType) {
@@ -75,7 +75,7 @@ public class StackCommand extends Command {
             }
             break;
         }
-        return super.process();
+        super.process();
     } 
     
 }
