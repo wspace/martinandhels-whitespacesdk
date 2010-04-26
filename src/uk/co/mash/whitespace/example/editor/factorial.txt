@@ -1,0 +1,144 @@
+#Label start
+Label 101
+#Prompt and get number
+Gosub 333
+#validate
+Gosub 99
+#set location of number to factorialize, counter and result with same
+Label 102
+#Push Number
+Push 109
+Retrieve
+Duplicate
+Duplicate
+Duplicate
+# number
+#Push 109
+#Store
+#counter
+Push 108
+Store
+#result
+Push 107
+Store
+# get counter 
+Label 123
+Push 108
+Retrieve
+PUSH 1 
+#subtract 1
+Swap
+Subtract
+Duplicate
+#Store to counter
+Push 108
+Store
+#test if zero
+GotoIfZero 999
+#Get Result
+Push 107
+Retrieve
+Push 108
+Retrieve
+Multiply
+Push 107
+Store
+Push 1
+Goto 123
+#validate subroutine
+Label 99
+Push 109
+Retrieve
+Push 20
+Subtract
+GotoIfNegative 101
+Goto 102
+#Prompt subroutine
+Label 333
+Push char G
+OutputChar
+Push char i
+OutputChar
+Push char v
+OutputChar
+Push char e
+OutputChar
+Push 32
+OutputChar
+Push char m
+OutputChar
+Push char e
+OutputChar
+Push 32
+OutputChar 
+Push char a
+OutputChar
+Push 32
+OutputChar 
+Push char n
+OutputChar 
+Push char u
+OutputChar 
+Push char m
+OutputChar 
+Push char b
+OutputChar 
+Push char e
+OutputChar 
+Push char r
+OutputChar 
+Push 32
+Push char <
+OutputChar 
+Push char =
+OutputChar 
+Push char 2
+OutputChar
+Push char 0
+OutputChar
+OutputChar 
+Push char t
+OutputChar 
+Push char o
+OutputChar 
+Push 32
+OutputChar 
+Push char f
+OutputChar 
+Push char a
+OutputChar 
+Push char c
+OutputChar 
+Push char t
+OutputChar 
+Push char o
+OutputChar 
+Push char r
+OutputChar 
+Push char i
+OutputChar 
+Push char a
+OutputChar 
+Push char l
+OutputChar 
+Push char i
+OutputChar 
+Push char z
+OutputChar 
+Push char e
+OutputChar 
+Push char :
+OutputChar 
+#newline!
+Push 10
+OutputChar 
+#store number
+Push 109
+InputNumber
+EndSub
+#Mark end
+Label 999
+Push 107
+Retrieve
+OutputNumber
+End

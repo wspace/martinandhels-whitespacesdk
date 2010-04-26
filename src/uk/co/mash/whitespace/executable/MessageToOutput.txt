@@ -1,0 +1,3 @@
+Enter text Here. 
+My plan is that for a simple OutputIO program you'll be able to edit this file, run 
+CreateSimpleOutputFromString with no params and it'll create an output program for you.

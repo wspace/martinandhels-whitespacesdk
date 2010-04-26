@@ -1,0 +1,176 @@
+#1: Push 89 onto stack
+#[Space][Space][Space][Tab][Space][Tab][Tab][Space][Space][Tab][LF]
+#2: Output character from top of stack
+#[Tab][LF][Space][Space]
+#3: Push 111 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Tab][Tab][Tab][Tab][LF]
+#4: Output character from top of stack
+#[Tab][LF][Space][Space]
+#5: Push 117 onto stack
+#[Space][Space][Space][Tab][Tab][Tab][Space][Tab][Space][Tab][LF]
+#6: Output character from top of stack
+#[Tab][LF][Space][Space]
+#7: Push 32 onto stack
+#[Space][Space][Space][Tab][Space][Space][Space][Space][Space][LF]
+#8: Output character from top of stack
+#[Tab][LF][Space][Space]
+#9: Push 97 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Space][Space][Space][Tab][LF]
+#10: Output character from top of stack
+#[Tab][LF][Space][Space]
+#11: Push 114 onto stack
+#[Space][Space][Space][Tab][Tab][Tab][Space][Space][Tab][Space][LF]
+#12: Output character from top of stack
+#[Tab][LF][Space][Space]
+#13: Push 101 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Space][Tab][Space][Tab][LF]
+#14: Output character from top of stack
+#[Tab][LF][Space][Space]
+#15: Push 32 onto stack
+#[Space][Space][Space][Tab][Space][Space][Space][Space][Space][LF]
+#16: Output character from top of stack
+#[Tab][LF][Space][Space]
+#17: Push 83 onto stack
+#[Space][Space][Space][Tab][Space][Tab][Space][Space][Tab][Tab][LF]
+#18: Output character from top of stack
+#[Tab][LF][Space][Space]
+#19: Push 85 onto stack
+#[Space][Space][Space][Tab][Space][Tab][Space][Tab][Space][Tab][LF]
+#20: Output character from top of stack
+#[Tab][LF][Space][Space]
+#21: Push 67 onto stack
+#[Space][Space][Space][Tab][Space][Space][Space][Space][Tab][Tab][LF]
+#22: Output character from top of stack
+#[Tab][LF][Space][Space]
+#23: Push 72 onto stack
+#[Space][Space][Space][Tab][Space][Space][Tab][Space][Space][Space][LF]
+#24: Output character from top of stack
+#[Tab][LF][Space][Space]
+#25: Push 32 onto stack
+#[Space][Space][Space][Tab][Space][Space][Space][Space][Space][LF]
+#26: Output character from top of stack
+#[Tab][LF][Space][Space]
+#27: Push 97 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Space][Space][Space][Tab][LF]
+#28: Output character from top of stack
+#[Tab][LF][Space][Space]
+#29: Push 32 onto stack
+#[Space][Space][Space][Tab][Space][Space][Space][Space][Space][LF]
+#30: Output character from top of stack
+#[Tab][LF][Space][Space]
+#31: Push 102 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Space][Tab][Tab][Space][LF]
+#32: Output character from top of stack
+#[Tab][LF][Space][Space]
+#33: Push 117 onto stack
+#[Space][Space][Space][Tab][Tab][Tab][Space][Tab][Space][Tab][LF]
+#34: Output character from top of stack
+#[Tab][LF][Space][Space]
+#35: Push 99 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Space][Space][Tab][Tab][LF]
+#36: Output character from top of stack
+#[Tab][LF][Space][Space]
+#37: Push 107 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Tab][Space][Tab][Tab][LF]
+#38: Output character from top of stack
+#[Tab][LF][Space][Space]
+#39: Push 105 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Tab][Space][Space][Tab][LF]
+#40: Output character from top of stack
+#[Tab][LF][Space][Space]
+#41: Push 110 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Tab][Tab][Tab][Space][LF]
+#42: Output character from top of stack
+#[Tab][LF][Space][Space]
+#43: Push 103 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Space][Tab][Tab][Tab][LF]
+#44: Output character from top of stack
+#[Tab][LF][Space][Space]
+#45: Push 32 onto stack
+#[Space][Space][Space][Tab][Space][Space][Space][Space][Space][LF]
+#46: Output character from top of stack
+#[Tab][LF][Space][Space]
+#47: Push 116 onto stack
+#[Space][Space][Space][Tab][Tab][Tab][Space][Tab][Space][Space][LF]
+#48: Output character from top of stack
+#[Tab][LF][Space][Space]
+#49: Push 119 onto stack
+#[Space][Space][Space][Tab][Tab][Tab][Space][Tab][Tab][Tab][LF]
+#50: Output character from top of stack
+#[Tab][LF][Space][Space]
+#51: Push 97 onto stack
+#[Space][Space][Space][Tab][Tab][Space][Space][Space][Space][Tab][LF]
+#52: Output character from top of stack
+#[Tab][LF][Space][Space]
+#53: Push 116 onto stack
+#[Space][Space][Space][Tab][Tab][Tab][Space][Tab][Space][Space][LF]
+#54: Output character from top of stack
+#[Tab][LF][Space][Space]
+#55: Push 46 onto stack
+#[Space][Space][Space][Tab][Space][Tab][Tab][Tab][Space][LF]
+#56: Output character from top of stack
+#[Tab][LF][Space][Space]
+#57: End program
+#[LF][LF][LF]
+SOURCE:
+   	 		  	
+	
+     		 				
+	
+     			 	 	
+	
+     	     
+	
+     		    	
+	
+     			  	 
+	
+     		  	 	
+	
+     	     
+	
+     	 	  		
+	
+     	 	 	 	
+	
+     	    		
+	
+     	  	   
+	
+     	     
+	
+     		    	
+	
+     	     
+	
+     		  		 
+	
+     			 	 	
+	
+     		   		
+	
+     		 	 		
+	
+     		 	  	
+	
+     		 			 
+	
+     		  			
+	
+     	     
+	
+     			 	  
+	
+     			 			
+	
+     		    	
+	
+     			 	  
+	
+     	 			 
+	
+  
+
+
+
+

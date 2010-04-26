@@ -1,0 +1,56 @@
+1: Push 1 onto stack
+[Space][Space][Space][Tab][LF]
+2: Label 1000011
+[LF][Space][Space][Space][Tab][Space][Space][Space][Space][Tab][Tab][LF]
+3: Duplicate top item on stack
+[Space][LF][Space]
+4: Output number from top of stack
+[Tab][LF][Space][Tab]
+5: Push 10 onto stack
+[Space][Space][Space][Tab][Space][Tab][Space][LF]
+6: Output character from top of stack
+[Tab][LF][Space][Space]
+7: Push 1 onto stack
+[Space][Space][Space][Tab][LF]
+8: Add top two items on stack
+[Tab][Space][Space][Space]
+9: Duplicate top item on stack
+[Space][LF][Space]
+10: Push 11 onto stack
+[Space][Space][Space][Tab][Space][Tab][Tab][LF]
+11: Subtract top two items on stack
+[Tab][Space][Space][Tab]
+12: Goto 1000101 if top of stack is zero
+[LF][Tab][Space][Space][Tab][Space][Space][Space][Tab][Space][Tab][LF]
+13: Goto 1000011
+[LF][Space][LF][Space][Tab][Space][Space][Space][Space][Tab][Tab][LF]
+14: Label 1000101
+[LF][Space][Space][Space][Tab][Space][Space][Space][Tab][Space][Tab][LF]
+15: Discard top item on stack
+[Space][LF][LF]
+16: End program
+[LF][LF][LF]
+SOURCE:
+   	
+
+   	    		
+ 
+ 	
+ 	   	 	 
+	
+     	
+	    
+    	 		
+	  	
+	  	   	 	
+
+ 
+ 	    		
+
+   	   	 	
+ 
+
+
+
+
+

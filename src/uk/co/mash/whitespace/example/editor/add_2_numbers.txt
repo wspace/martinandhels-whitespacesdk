@@ -1,0 +1,77 @@
+Push char P
+OutputChar
+Push char l
+OutputChar
+Push char e
+OutputChar
+Push char a
+OutputChar
+Push char s
+OutputChar
+Push char e
+OutputChar
+Push 32
+OutputChar
+Push char E
+OutputChar 
+Push char n
+OutputChar
+Push char t
+OutputChar 
+Push char e
+OutputChar
+Push char r
+OutputChar 
+Push 32
+OutputChar
+Push char 2
+OutputChar
+Push 32
+OutputChar 
+Push char n
+OutputChar 
+Push char u
+OutputChar 
+Push char m
+OutputChar 
+Push char b
+OutputChar 
+Push char e
+OutputChar 
+Push char r
+OutputChar 
+Push char s
+OutputChar 
+Push char :
+OutputChar 
+Push 1010
+OutputChar 
+Push 2
+InputNumber
+Push 3
+InputNumber
+Push 2
+Retrieve 
+Push 3
+Retrieve 
+Add
+Push 4
+Store
+Push char A
+OutputChar
+Push char n
+OutputChar
+Push char s
+OutputChar
+Push char w
+OutputChar
+Push char e
+OutputChar
+Push char r
+OutputChar
+Push char =
+OutputChar
+Push 4
+Retrieve
+OutputNumber
+End
