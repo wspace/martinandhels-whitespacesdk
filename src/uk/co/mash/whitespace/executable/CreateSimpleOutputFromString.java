@@ -16,12 +16,7 @@ public class CreateSimpleOutputFromString {
         }
         StringBuilder programBuilder = new StringBuilder();
         String output = "                                                    " +
-        		"Why thank you sir! \n\nIt was a lot of fun to write. And my eldest *really* loved it. " +
-        		"(I've introduced him to the concept of recursion...)\n" +
-        		"Have fun! \n\n" +
-        		"Regards\n\n" +
-        		"Mash,\n" +
-        		"Lord of Whitespace." ;
+        		"Insert text here..." ;
         //get char array
         char[] charArray = output.toCharArray();
         for (char thing:charArray) {
