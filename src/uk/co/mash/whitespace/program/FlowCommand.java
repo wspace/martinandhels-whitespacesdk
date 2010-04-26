@@ -31,7 +31,6 @@ public class FlowCommand extends Command {
 
     @Override
     public void process() {
-        boolean keepGoing = true;
         // we jump around. This is the only command that uses the overridden process(int) method. 
         int currentCommand = getCurrentCommand();
         // default nextCommand
@@ -76,7 +75,7 @@ public class FlowCommand extends Command {
             System.out.println(System.getProperty("line.separator")+
                     System.getProperty("line.separator")+
                     "***  Program End  ***");
-            keepGoing = false;
+            System.exit(0);
         }
         getNextCommand(nextCommand).process();
     }
