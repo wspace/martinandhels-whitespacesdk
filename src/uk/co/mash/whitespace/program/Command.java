@@ -43,8 +43,9 @@ public abstract class Command {
      * The point of a command object is to run! The process method is how it works. 
      * N.B. all calls to process() are recursive.
      */
-    public void process() {
-        getNextCommand().process();
+    public int process() {
+        //return getProgramRef().processCommand(getNextCommand());
+        return getCurrentCommand();
     }
     /**
      * Getter for label. 
@@ -91,16 +92,6 @@ public abstract class Command {
     
     public Program getProgramRef() {
         return this.programRef;
-    }
-    
-    protected Command getNextCommand() {
-        // apart from Flow always returns next in list.
-        return programRef.getNextCommand();
-    }
-    
-    protected Command getNextCommand(int next) {
-        // apart from Flow always returns next in list.
-        return programRef.getNextCommand(next);
     }
     
     public Map<Long, Long> takeDump() {

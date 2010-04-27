@@ -60,31 +60,16 @@ public class Program implements Runnable{
                 System.getProperty("line.separator"));
         // commands need a reference to their controlling program.  
         listOfCommands.get(0).setProgramRef(this);
-        listOfCommands.get(0).process();
+        int status = 0;
+        while (status>-1) {
+            Command nextCommand = listOfCommands.get(status);
+            nextCommand.setProgramRef(this);
+            status = nextCommand.process();
+            currentCommand = status;
+        }
+//        listOfCommands.get(0).process();
         // all process methods are recursive!
 
-    }
-    /**
-     * Increments current command, gets it as the next one, and re-sets the Program reference on the next command. 
-     * @return the next Command Object to process.
-     */
-    public Command getNextCommand() {
-        currentCommand++;
-        Command nextCommand = listOfCommands.get(currentCommand);
-        nextCommand.setProgramRef(this);
-        return nextCommand;
-    }
-    /**
-     * Overloaded method used exclusively by FlowCommand. 
-     * 
-     * @param next the actual command to use next instead of the incremented one.
-     * @return the next Command Object to process.
-     */
-    public Command getNextCommand(int next) {
-        currentCommand = next;
-        Command nextCommand = listOfCommands.get(currentCommand);
-        nextCommand.setProgramRef(this);
-        return nextCommand;
     }
     /** 
      * Getter for internal Stack Object.

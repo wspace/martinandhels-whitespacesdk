@@ -33,7 +33,7 @@ public class IOCommand extends Command implements KeyListener{
     }
 
     @Override
-    public void process() {
+    public int process() {
         Stack<Long> stack = getFlatPackStack();
         Map<Long,Long> dump = takeDump();
         BufferedReader inputReader = 
@@ -100,7 +100,7 @@ public class IOCommand extends Command implements KeyListener{
                 break;
             }
         }
-        super.process();
+        return getCurrentCommand()+1;
     }
 
     @Override
