@@ -27,6 +27,8 @@ import java.util.Map;
 import java.util.Stack;
 
 import org.apache.commons.lang.StringUtils;
+
+import uk.co.mash.whitespace.exception.ProgramRuntimeException;
 /**
  * Java implementation of runnable Whitespace program that runs within the JVM.
  * 
@@ -47,6 +49,7 @@ public class Program implements Runnable{
         init();
     }
 
+    public static final int PROGRAM_END_NORMAL = -99;
     /*
      *  All the things it needs...
      *  A reference to main.
@@ -64,6 +67,8 @@ public class Program implements Runnable{
     int currentCommand =0;
     /** "From" command. Where it came from. Used by subroutines for the return or end-sub command.*/
     int fromCommand =-1;
+    
+    long startTheClock = 0L;
     /** Convenience method to add a command to the list used by the program. */
     public void addCommand(Command command) {
         listOfCommands.add(command);
@@ -75,20 +80,49 @@ public class Program implements Runnable{
      * 
      */
     public void run() {
+        startTheClock = System.currentTimeMillis();
         System.out.println("*** Program Start ***"+
                 System.getProperty("line.separator"));
-        // commands need a reference to their controlling program.  
-        listOfCommands.get(0).setProgramRef(this);
-        int status = 0;
-        while (status>-1) {
-            Command nextCommand = listOfCommands.get(status);
-            nextCommand.setProgramRef(this);
-            status = nextCommand.process();
-            currentCommand = status;
+        try {
+            // commands need a reference to their controlling program.  
+            listOfCommands.get(0).setProgramRef(this);
+            int status = 0;
+            while (status>-1) {
+                Command nextCommand = listOfCommands.get(status);
+                nextCommand.setProgramRef(this);
+                status = nextCommand.process();
+                currentCommand = status;
+            }
+            if (status == -PROGRAM_END_NORMAL) {
+                // normal termination.
+                long duration = System.currentTimeMillis() - startTheClock;
+                System.out.println(System.getProperty("line.separator")+
+                        System.getProperty("line.separator")+
+                        "*** Program End ***"
+                        + System.getProperty("line.separator")
+                        + "Process time = [" + duration + "ms]");
+            }
+            // I know we get these... Protect and serve...
+//        } catch (IndexOutOfBoundsException iobe) {
+//            endProgram(new ProgramRuntimeException(iobe));
+//        } catch (NumberFormatException nfe) {
+//            
+//        } catch (NullPointerException npe) {
+//            
+//        } 
+        }catch (Throwable t) {
+            endProgram(new ProgramRuntimeException(t));    
         }
 //        listOfCommands.get(0).process();
         // all process methods are recursive!
 
+    }
+    private void endProgram(ProgramRuntimeException pre) {
+        long duration = System.currentTimeMillis()-startTheClock;
+        System.out.println("*** Program Encountered Exception ***"
+                + System.getProperty("line.separator") + pre
+                + System.getProperty("line.separator") + "Process time = ["
+                + duration + "ms]");
     }
     /** 
      * Getter for internal Stack Object.

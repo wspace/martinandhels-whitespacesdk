@@ -92,11 +92,7 @@ public class FlowCommand extends Command {
             break;
             
         case End:
-            System.out.println(System.getProperty("line.separator")+
-                    System.getProperty("line.separator")+
-                    "***  Program End Cocksucker ***");
-//            System.exit(0);
-            nextCommand= -1;
+            nextCommand= Program.PROGRAM_END_NORMAL;
         }
         if (terminate) {
             
