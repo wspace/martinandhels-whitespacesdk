@@ -127,7 +127,7 @@ public enum FullCommandType {
     [Tab][Tab]  -   Read a number and place it in the location given by the top of the stack
              */
     // IO
-    OutputStack("[Tab][LF][Space]","\t\n ",ParameterType.Null,CommandGroupType.IO,"Output entire stack as character"),
+    OutputStack("[Tab][LF][Space][Space][Space]","\t\n  ",ParameterType.Null,CommandGroupType.IO,"Output entire stack as character"),
     OutputChar("[Tab][LF][Space][Space]","\t\n  ",ParameterType.Null,CommandGroupType.IO,"Output character from top of stack"),
     OutputNumber("[Tab][LF][Space][Tab]","\t\n \t",ParameterType.Null,CommandGroupType.IO,"Output number from top of stack"),
     InputChar("[Tab][LF][Tab][Space]","\t\n\t ",ParameterType.Null,CommandGroupType.IO,"Read a character to heap at address held at top of the stack"),
