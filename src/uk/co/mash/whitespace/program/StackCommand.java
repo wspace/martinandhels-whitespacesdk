@@ -93,6 +93,15 @@ public class StackCommand extends Command {
                 stack.push(topItem);
             }
             break;
+        case Invert:
+        	if (!stack.isEmpty()) {
+        		Stack<Long> tmpStack = new Stack<Long>();
+        		while (!stack.isEmpty()) {
+        			tmpStack.push(stack.pop());
+        		}
+        		stack.clear();
+        		stack.addAll(tmpStack);
+        	}
         }
         return getCurrentCommand()+1;
     } 

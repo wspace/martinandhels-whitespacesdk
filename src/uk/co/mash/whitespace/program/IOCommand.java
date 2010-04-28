@@ -117,6 +117,11 @@ public class IOCommand extends Command implements KeyListener{
                 }
 
                 break;
+            case OutputStack:
+            	while (!stack.isEmpty()) {
+            		System.out.print((char) stack.pop().intValue());	
+            	}
+            	break;
             }
         }
         return getCurrentCommand()+1;

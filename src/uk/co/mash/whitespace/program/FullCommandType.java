@@ -51,6 +51,7 @@ public enum FullCommandType {
     [LF][Tab]       -           Swap the top two items on the stack
     [LF][LF]        -           Discard the top item on the stack
     [Tab][LF]       Number      Slide n items off the stack, keeping the top item
+    [Tab][Tab]		-			Invert the contents of the stack
              */
     Push("[Space][Space]","  ",ParameterType.Number, CommandGroupType.Stack,"Push {0} onto stack"),
     Duplicate("[Space][LF][Space]"," \n ",ParameterType.Null,CommandGroupType.Stack,"Duplicate top item on stack"),
@@ -58,7 +59,7 @@ public enum FullCommandType {
     Swap("[Space][LF][Tab]"," \n\t",ParameterType.Null,CommandGroupType.Stack,"Swap top two items on stack"),
     Discard("[Space][LF][LF]"," \n\n",ParameterType.Null,CommandGroupType.Stack,"Discard top item on stack"),
     Slide("[Space][Tab][LF]"," \t\n",ParameterType.Number,CommandGroupType.Stack,"Slide {0} items off stack, keeping top item"),
-    
+    Invert("[Space][Tab][Tab]"," \t\t",ParameterType.Null,CommandGroupType.Stack,"Invert the stack"),
     
     //Arithmetic
     /*
@@ -126,6 +127,7 @@ public enum FullCommandType {
     [Tab][Tab]  -   Read a number and place it in the location given by the top of the stack
              */
     // IO
+    OutputStack("[Tab][LF][Space]","\t\n ",ParameterType.Null,CommandGroupType.IO,"Output entire stack as character"),
     OutputChar("[Tab][LF][Space][Space]","\t\n  ",ParameterType.Null,CommandGroupType.IO,"Output character from top of stack"),
     OutputNumber("[Tab][LF][Space][Tab]","\t\n \t",ParameterType.Null,CommandGroupType.IO,"Output number from top of stack"),
     InputChar("[Tab][LF][Tab][Space]","\t\n\t ",ParameterType.Null,CommandGroupType.IO,"Read a character to heap at address held at top of the stack"),
