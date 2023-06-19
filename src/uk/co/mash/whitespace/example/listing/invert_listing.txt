@@ -1,0 +1,39 @@
+#1: Push 1 onto stack
+#[Space][Space][Space][Tab][LF]
+#2: Push 2 onto stack
+#[Space][Space][Space][Tab][Space][LF]
+#3: Push 3 onto stack
+#[Space][Space][Space][Tab][Tab][LF]
+#4: Push 4 onto stack
+#[Space][Space][Space][Tab][Space][Space][LF]
+#5: Push 5 onto stack
+#[Space][Space][Space][Tab][Space][Tab][LF]
+#6: Invert the stack
+#[Space][Tab][Tab]
+#7: Output number from top of stack
+#[Tab][LF][Space][Tab]
+#8: Output number from top of stack
+#[Tab][LF][Space][Tab]
+#9: Output number from top of stack
+#[Tab][LF][Space][Tab]
+#10: Output number from top of stack
+#[Tab][LF][Space][Tab]
+#11: Output number from top of stack
+#[Tab][LF][Space][Tab]
+#12: End program
+#[LF][LF][LF]
+SOURCE:
+   	
+   	 
+   		
+   	  
+   	 	
+ 			
+ 		
+ 		
+ 		
+ 		
+ 	
+
+
+

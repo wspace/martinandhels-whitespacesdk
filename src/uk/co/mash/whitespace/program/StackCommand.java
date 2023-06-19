@@ -102,9 +102,6 @@ public class StackCommand extends Command {
         		stack.clear();
         		stack.addAll(tmpStack);
         	}
-        	while (!stack.isEmpty()) {
-                System.out.print((char) stack.pop().intValue());    
-            }
             break;
         }
         return getCurrentCommand()+1;
